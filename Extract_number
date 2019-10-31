@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Oct  2 17:26:08 2019
+
+@author: maulik
+"""
+import re
+S= input("")
+L= (re.findall('\d+', S))
+for i in range(len(L)):
+    L[i]= int(L[i])
+print(L)
+print(max(L))
+    

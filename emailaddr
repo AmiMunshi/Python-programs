@@ -1,0 +1,54 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Oct 30 20:12:33 2019
+
+@author: maulik
+"""
+import string
+import re
+char1= string.ascii_letters 
+char2= "_"
+char3="-"
+char4=string.digits
+charuser=char1+char2+char3+char4
+charweb=string.ascii_letters +string.digits
+n= int(input())
+S=[]
+for i in range(n):
+    item=input()
+    S.append(item)
+    
+def validusername(temp1):
+    for i1 in temp1:
+        if i1 not in charuser:
+            return False
+
+def validwebsite(temp2):
+    for i1 in temp2:
+        if i1 not in charweb:
+            return False      
+    
+S1=[]
+for i in range(n):
+    temp=S[i]
+    print(temp)
+    temp1= re.split("@",temp)
+    print(temp1)
+    temp2= re.split(".com", temp1[1])
+    print(temp2)
+    temp3=list(temp[1])  
+    print(temp3)
+    
+    if (validusername(temp1)==True):
+        print("yes")
+        
+    
+   
+S1.sort()
+print(S1)
+        
+
+    
+
+    

@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Aug 16 18:48:08 2019
+
+@author: maulik
+"""
+
+A= input()
+n=len(A)
+ones= A.count('1')
+zeros= A.count('0')
+if ones==n-1 or zeros==n-1:
+    print("YES")
+else:
+    print("NO")

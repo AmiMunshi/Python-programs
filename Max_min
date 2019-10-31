@@ -1,0 +1,6 @@
+# max and min
+
+
+A= [int(N) for N in input().split()]
+A.sort()
+print(A[-2], A[1])

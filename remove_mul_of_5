@@ -1,0 +1,9 @@
+# remove numbers which are multiple of 5 from the list
+N= input()
+B=[]
+A= [int(N) for N in input().split()]
+for i in range(int(N)):
+    if A[i]%5 !=0:
+        B.append(A[i])
+print(*B)
+

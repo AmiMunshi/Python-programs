@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Aug 16 20:07:25 2019
+
+@author: maulik
+"""
+
+A= input()
+A=int(A)
+i=A
+count=1
+while i>1:
+    count= count*i
+    i=i-1
+print(count)

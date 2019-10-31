@@ -1,0 +1,21 @@
+
+n,m = input().split()
+m= int(m)
+n= int(n)
+A= [int(x) for x in input().split()]
+A.sort()
+B=[]
+diff= max(A)-min(A)
+for i in range(0, (n-m+1)):
+    B= A[i:i+m-1]
+    diff1= max(B)-min(B)
+    if diff1<diff:
+        diff=diff1
+    B=[]
+print(B)
+    
+
+
+
+
+

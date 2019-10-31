@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Sep 25 18:07:34 2019
+
+@author: maulik
+"""
+
+import cv2
+img= cv2.imread(':/Home/Documents/Ami/Python programs/cameraman.png')
+cv2.imshow('image',img)

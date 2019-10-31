@@ -1,0 +1,11 @@
+##Print smaller number
+a,b = input("Input\n").split();
+a= int(a)
+b=int(b)
+if a>b:
+    print("Output\n",b)
+else:
+    print("Output\n",a)
+    
+
+

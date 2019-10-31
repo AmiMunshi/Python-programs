@@ -1,0 +1,5 @@
+t= input("Enter a number for which the table has to be displayed")
+t= int(t)
+for i in range(1,11):
+    table= t*i
+    print(t,'X',i,'=',table)

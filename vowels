@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Sep 22 16:56:00 2019
+
+@author: maulik
+"""
+
+S1= input("")
+S2="aeiou"
+L1= S1.split()
+L2= S2.split()
+S3=S1[0]
+i=0
+for i in range(1, len(S1)):
+    if S1[i] not in S2 or S1[i-1] not in S2 :
+        S3=S3+S1[i]
+print(S3, end="")
+        
